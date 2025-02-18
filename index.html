@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <h2>FizzBuzz</h2>
-    <h2>Vocales</h2>
-    <h2>Fibonacci</h2>
+
+    <div class="container">
+        <div class="buttons">
+            <h1>Ejercicios de <code>FCA</code></h1>
+            <a href="piedra-papel-tijera/piedrapapeltijera.html"><button class="fill">Piedra pepel o tijera</button></a>
+            <button class="pulse" onclick="juegoFizzbuzz()">FizzBuzz</button>
+            <button class="close" onclick="cuentaVocales()"># de Vocales</button>
+            <button class="raise" onclick="secuenciaDeFibonacci()">Serie de Fibonacci</button>
+            <button class="up" onclick="esPalindromo1()">Es Palindromo?</button>
+            <button class="slide" onclick="adivinaElNumero()">Adivina el número</button>
+            <button class="offset" onclick="haceFactorial1()">Calcula Factorial</button>
+        </div>
+    </div>
+
+
     <script src="index.js"></script>
+
 </body>
+
 </html>

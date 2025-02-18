@@ -1,5 +1,5 @@
 function juegoFizzbuzz() {
-    let repeticiones = +prompt('Escribe la cantidad el último número que quieres validar')
+    let repeticiones = +prompt('Escribe el valor del último número que quieres validar')
     for (let i = 1; i <= repeticiones; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
             console.log('FizzBuzz');
@@ -11,6 +11,7 @@ function juegoFizzbuzz() {
             console.log(i);
         }
     }
+    alert('Revisa la consola para ver los resultados');
 }
 
 function cuentaVocales() {
@@ -28,7 +29,7 @@ function cuentaVocales() {
             cont_vocales = cont_vocales;
         }
     };
-    console.log(cont_vocales);
+    alert(`La palabra "${palabra}" tiene ${cont_vocales} vocales`);
 };
 
 function secuenciaDeFibonacci() {
@@ -42,6 +43,7 @@ function secuenciaDeFibonacci() {
         a = b;
         b = c;
     }
+    alert('Revisa la consola para ver los resultados');
 };
 
 function esPalindromo1() {
@@ -62,12 +64,6 @@ function esPalindromo1() {
     } else {
         alert('No es palindromo')
     }
-}
-
-function esPalindromo2() {
-    let valorIngresado = prompt('Escribe un número o palabra para saber si es palíndromo').toLowerCase().replace(/ /g, '');
-    console.log(valorIngresado);
-
 }
 
 function esPalindromo3() {
@@ -118,6 +114,9 @@ function adivinaElNumero() {
             break;
         } else {
             alert(`No es el número correcto, te quedan ${intentos() - i - 1} intentos`);
+            if (i === intentos() - 1) {
+                alert(`Lo siento, no pudiste adivinar el número. El número era ${numeroAleatoreo}`);
+            }
         }
     }
 }
@@ -148,3 +147,4 @@ function haceFactorial3() {
     }
     alert(`El factorial de ${numero} es ${resultado}`);
 }
+

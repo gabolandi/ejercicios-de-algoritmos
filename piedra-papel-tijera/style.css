@@ -1,11 +1,43 @@
+/* Definir la fuente utilizando @font-face */
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('assets/fonts/Pokemon\ Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pokemon hollow';
+    src: url('assets/fonts/Pokemon\ Hollow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Usar la fuente en el cuerpo del documento */
+body {
+
+    background-color: white;
+
+
+    
+}
+
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #94adc8;
-
+    background-color: white;
+    font-family: 'Pokemon hollow', sans-serif;
+    font-weight: 500; /* Disminuir el grosor del texto */
+    letter-spacing: 0.1em; /* Ajusta este valor según lo necesites */
 }
+
+p, .pokemon {
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
 
 .input {
     display: flex;

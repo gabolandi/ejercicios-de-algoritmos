@@ -28,7 +28,15 @@ let respuesta2 = 0 ;
 //     alert(`Gana jugador 2, con ${jugador2} contra ${jugador1} del jugador 1`);
 // }
 
-//opción 2
+//Función para el botón de iniciar el juego
+
+document.querySelector('.start').addEventListener('click', function() {
+    console.log('Juego iniciado');
+});
+
+
+
+// Función para jugar piedra papel o tijera entre 2 jugadores
 
 var randomp1 = Math.floor(Math.random()*3);
 var randomp2 = Math.floor(Math.random()*3);
